@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>index</title>
+		<meta name="description" content="" />
+		<meta name="author" content="unixander" />
+		<link type="text/css" rel="stylesheet" href="css/juaPlayer.css" />
+		<link type="text/css" rel="stylesheet" href="css/sprites.css" />
+	</head>
+	<body>
+		<div class="juaPlayer">
+		</div>
+	</body>
+	<script src="js/jquery-1.8.1.min.js"></script>
+	<script src="js/juaPlayer.js"></script>
+	<script src="js/juaCanvas.js"></script>
+	<script>
+		$(function() {
+			juaPlayer.source = 'https://dl.dropboxusercontent.com/u/4586393/Projects/juaPlayer/sample/parker.mp4';
+			juaPlayer.width = 500;
+			juaPlayer.height = 300;
+			juaPlayer.init();
+			juaCanvas.createCanvas();
+			juaCanvas.initCanvas();
+		});
+	</script>
+</html>
